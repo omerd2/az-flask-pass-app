@@ -1,3 +1,8 @@
+variable "subscription_id" {
+  description = "Subscription ID of Azure account"
+  type = string
+}
+
 variable "rg_name" {
     description = "The name of the resoruce group"
     default = "python-app-group"

@@ -52,12 +52,13 @@ No modules.
 | <a name="input_afd_routes_patterns"></a> [afd\_routes\_patterns](#input\_afd\_routes\_patterns) | Patterns to match | `set(string)` | <pre>[<br>  "/*"<br>]</pre> | no |
 | <a name="input_afd_routes_supported_protocols"></a> [afd\_routes\_supported\_protocols](#input\_afd\_routes\_supported\_protocols) | Supported protocols for front door routing | `set(string)` | <pre>[<br>  "Http",<br>  "Https"<br>]</pre> | no |
 | <a name="input_afdp_name"></a> [afdp\_name](#input\_afdp\_name) | n/a | `string` | `"front-door-python-app"` | no |
-| <a name="input_app_zip_file_path"></a> [app\_zip\_file\_path](#input\_app\_zip\_file\_path) | The path to the zip file app | `string` | `"../app-main.zip"` | no |
+| <a name="input_app_zip_file_path"></a> [app\_zip\_file\_path](#input\_app\_zip\_file\_path) | The path to the zip file app | `string` | `"./app-main.zip"` | no |
 | <a name="input_asp_name"></a> [asp\_name](#input\_asp\_name) | The name of the service plan app | `string` | `"service-plan-python-app"` | no |
 | <a name="input_asp_os_type"></a> [asp\_os\_type](#input\_asp\_os\_type) | The OS type (linux,windows) of the service plan | `string` | `"Linux"` | no |
 | <a name="input_asp_sku_name"></a> [asp\_sku\_name](#input\_asp\_sku\_name) | The App Service  plan type: https://learn.microsoft.com/en-us/azure/app-service/overview-hosting-plans | `string` | `"P1v3"` | no |
 | <a name="input_rg_location"></a> [rg\_location](#input\_rg\_location) | The location of the resource group (west-europe, east-europe, etc..) | `string` | `"West Europe"` | no |
 | <a name="input_rg_name"></a> [rg\_name](#input\_rg\_name) | The name of the resoruce group | `string` | `"python-app-group"` | no |
+| <a name="input_subscription_id"></a> [subscription\_id](#input\_subscription\_id) | Subscription ID of Azure account | `string` | n/a | yes |
 | <a name="input_webaapp_https_only"></a> [webaapp\_https\_only](#input\_webaapp\_https\_only) | Enable https access only to the webapp | `bool` | `true` | no |
 | <a name="input_webapp_ftps_state"></a> [webapp\_ftps\_state](#input\_webapp\_ftps\_state) | The ftps state of the webapp | `string` | `"Disabled"` | no |
 | <a name="input_webapp_ip_address_allow"></a> [webapp\_ip\_address\_allow](#input\_webapp\_ip\_address\_allow) | The ip address CIDR to allow traffic to the application. | `string` | `"0.0.0.0/0"` | no |
