@@ -18,6 +18,7 @@ variable "rg_location" {
 }
 
 
+
 variable "asp_name" {
   description = "The name of the service plan app"
   default = "service-plan-python-app"

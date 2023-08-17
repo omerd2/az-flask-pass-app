@@ -4,6 +4,8 @@ resource "azurerm_service_plan" "appserviceplan" {
   resource_group_name = azurerm_resource_group.rg.name
   os_type             = var.asp_os_type
   sku_name            = var.asp_sku_name
+  per_site_scaling_enabled = true
+  worker_count  = 2
 }
 
 resource "azurerm_linux_web_app" "webapp" {
@@ -15,6 +17,7 @@ resource "azurerm_linux_web_app" "webapp" {
   zip_deploy_file       = var.app_zip_file_path
 
   site_config {
+    always_on             = true
     ftps_state          = var.webapp_ftps_state
 
     application_stack {

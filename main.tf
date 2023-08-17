@@ -8,12 +8,13 @@ terraform {
 }
 
 provider "azurerm" {
-  subscription_id = var.subscription_id
   features {}
 }
 
 module "python-pass-app" {
   source = "./python-pass-app"
+  app_zip_file_path = "./app-main.zip"
+  subscription_id = var.subscription_id
 }
 
 
