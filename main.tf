@@ -13,7 +13,7 @@ provider "azurerm" {
 
 module "python-pass-app" {
   source = "./python-pass-app"
-  app_zip_file_path = "./app-main.zip"
+  app_zip_file_path = var.app_zip_file_path 
   subscription_id = var.subscription_id
 }
 
