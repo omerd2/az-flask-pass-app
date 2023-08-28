@@ -21,8 +21,9 @@ resource "azurerm_linux_web_app" "webapp" {
     ftps_state          = var.webapp_ftps_state
 
     application_stack {
-    python_version      = var.webapp_python_version
-  }
+      python_version      = var.webapp_python_version
+    }
+
     ip_restriction {
       ip_address            = var.webapp_ip_address_allow
       action                = "Allow"
@@ -38,4 +39,10 @@ resource "azurerm_linux_web_app" "webapp" {
       name = "Allow traffic from Front Door"
     }
   }
+
+  app_settings = {
+    SCM_DO_BUILD_DURING_DEPLOYMENT = true
+  }
 }
+
+
