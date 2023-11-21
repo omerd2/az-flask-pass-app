@@ -1,3 +1,21 @@
+Azure Web Application
+A new web application designed to operate on Azure, ensuring security and accessibility for its users through the internet.
+
+Requirements:
+The application will be hosted in Europe, specifically in West Europe.
+Minimal latency is a priority for users accessing the application from other countries.
+Preference for Platform as a Service (PaaS) over Infrastructure as a Service (IaaS) where possible.
+Utilization of cloud services to provide a cost-effective solution without altering the application's current state.
+The server, equipped with 2 CPUs and 8GB of memory, must efficiently handle 200 users concurrently, with the capability to scale up to 400 users during peak loads.
+Installation:
+To install the desired application, use the provided Python application enclosed in the attached Zip file.
+
+Note: The application's owner has emphasized the importance of meeting the specified requirements for optimal performance and user experience.
+
+
+
+
+
 ## Requirements
 
 No requirements.
